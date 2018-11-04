@@ -36,19 +36,6 @@ public class Puzzle {
 		this.puzzle[3][0] = 'Y';
 		this.puzzle[3][1] = 'Y';
 		this.puzzle[3][2] = 'Y';
-
-//		this.puzzle[0][0] = 'G';
-//		this.puzzle[0][1] = 'W';
-//		this.puzzle[0][2] = 'G';
-//		this.puzzle[1][0] = 'B';
-//		this.puzzle[1][1] = 'Y';
-//		this.puzzle[1][2] = 'B';
-//		this.puzzle[2][0] = 'R';
-//		this.puzzle[2][1] = 'G';
-//		this.puzzle[2][2] = 'R';
-//		this.puzzle[3][0] = 'Y';
-//		this.puzzle[3][1] = 'B';
-//		this.puzzle[3][2] = 'Y';
 	}
 
 	@Override
@@ -258,7 +245,7 @@ public class Puzzle {
 
 		return true;
 	}
-
+/*
 	// خوارزمية البحث بالعمق اولا
 	void DFS(int i, int j) {
 
@@ -303,7 +290,7 @@ public class Puzzle {
 			}
         } 
 	}
-
+*/
 	// خوارزمية البحث بالعرض اولا
 	void BFS(int i, int j) {
 
@@ -354,12 +341,12 @@ public class Puzzle {
 		System.out.println(pzl);
 		System.out.println("--------------------------");
 		
-		// قت بداية التنفيذ
+		// وقت بداية التنفيذ
 		long startTime = System.nanoTime();
 		
 		pzl.BFS(0, 1);
 		
-		// قت نهاية التنفيذ
+		// وقت نهاية التنفيذ
 		long endTime = System.nanoTime();
 		
 		// وقت تنفيذ خوارزمية البحث بالعرض أولا
